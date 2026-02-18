@@ -1,9 +1,107 @@
-body{
-    margin: 10px;
+html {
+    font-size: 100%;
 }
 
-a:hover{
-    color: rgb(222,82,113);
-    text-decoration-line: underline;
-    text-decoration-style: dashed;
+body { 
+    font-family: "Libre Baskerville", Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #DED4C6, #DCDEC6);
+    color: #222222;
+    line-height: 1.85;
+    font-size: 1.08rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* headers */
+header {
+    background: linear-gradient(135deg, #DEC6DC, #C6DCDE);
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 3rem;
+    font-weight: 800; 
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* nav */
+nav ul {
+    padding: 1.8rem 0 0 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.2rem;
+    margin: 0;
+}
+
+nav a {
+    font-family: system-ui, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+    padding: 0.3rem 0; 
+}
+
+
+/* container */
+.container {
+    max-width: 60rem;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+/* sections*/
+section {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 3rem;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* headings */
+h2 {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #333333;
+}
+
+h3 {
+    font-family: system-ui, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: #555555;
+    letter-spacing: 0.02em;
+}
+
+p {
+    max-width: 65ch;
+    margin: 0 auto 1.6rem auto; /* centers text block */
+    font-size: 1.1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
